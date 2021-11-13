@@ -13,7 +13,7 @@ nav{
 }
 #banner_Img{
   width: 100%;
-  
+  filter: drop-shadow(2px 2px 15px #000000);
 }
 #img{
   margin-bottom: 20px;;
@@ -22,6 +22,10 @@ nav{
 .row{
   display: flex;
   flex-direction: column-reverse;
+  background:url(background/circle-scatter-haikei3.svg);
+ background-size: 400px;
+ background-position: bottom right;
+ background-repeat: no-repeat;
   
 }
 .row h1{
@@ -32,11 +36,14 @@ nav{
   font-size: 1rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px),(orientation: landscape) {
   .row{
     display: flex;
     flex-direction: row;
     align-items: center;
+    background:url(background/circle-scatter-haikei2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
  
  #img{
