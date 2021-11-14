@@ -13,45 +13,77 @@ nav{
 }
 #banner_Img{
   width: 100%;
-  filter: drop-shadow(2px 2px 15px #000000);
+  background: url(clipart/bg.svg);
+  background-size: 220px;
+  background-repeat: repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+  background-clip: border-box;
 }
 #img{
   margin-bottom: 20px;;
 }
 
-.row{
+#fs .row{
   display: flex;
   flex-direction: column-reverse;
-  background:url(background/circle-scatter-haikei3.svg);
- background-size: 400px;
- background-position: bottom right;
- background-repeat: no-repeat;
   
 }
-.row h1{
+#fs .row h1{
   font-size: 2rem;
   font-family: 'Bungee Shade', cursive;
 }
-.row p{
+#fs .row p{
   font-size: 1rem;
 }
 
+.text{
+  background: url(clipart/bg2.svg);
+  background-size: contain;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+
+
+.img-con img{
+  width: 120px;
+}
+.info{
+  width: 150px;
+  margin: 10px auto;
+  box-shadow: 9px 9px 10px #E8E8E8;
+  border-radius: 10px;
+}
+.img-con{
+  background: #E4E4E4;
+  border-radius: 10px 10px 0 0;
+  clip-path: circle(105px at 80px 0px);
+}
+
+
+
+
+
+
 @media only screen and (min-width: 768px),(orientation: landscape) {
-  .row{
+  #fs .row{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background:url(background/circle-scatter-haikei2.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding-left: 20px;
   }
  
  #img{
    margin-bottom: none;
  }
 
-.row img{
+#fs .row img{
   padding: 20px;
+  background-size: 250px;
+  background-repeat: repeat;
+  background-clip: border-box;
 }
   
 }
